@@ -1,23 +1,169 @@
 /* custom styles */
-div#glbheader {
-	width: 100%;
-	height: 93px;
-	background-color: #ffffff;
-	border: 2;
-	margin: 30px; 
+
+body {
+	font-family: 'Montserrat', Helvetica;
+	font-size: 14px;
 }
 
-.topMenu {
-	font-family: 'Gotham SSm A', 'Gotham SSm B'; 
-	font-weight: 700; 
-	font-style: normal;
+header {
+	height: 95px;
+	line-height: 95px;
 }
 
-div#social {
-	width: 73px;
-	background-color: #aaaaaa
+header .topMenu {
+	text-align: center;
 }
 
+header .push-down {margin-top: 32px; }
+
+header .topMenu li > a {
+	font-family: 'Montserrat', Helvetica;	
+	font-size: 13px;
+	letter-spacing: 1.1px;
+	color: #aaa;
+	text-transform: uppercase;
+	transition: color .75s ease-in-out;
+	-moz-transition: color .75s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;	
+}
+
+header .topMenu li > a:hover {
+	color: #ddd;
+	transition: color .75s ease-in-out;
+	-moz-transition: color .75s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;		
+}
+
+header ul.home-social {
+	line-height: 45px;
+	background-color: #aaa;
+	display: block;
+	float: right;
+	margin-bottom: 8px;
+	width: 75px;
+}
+
+header ul.home-social li {
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+header ul.home-social li a.instagram {
+	width: 25px;
+	background: url('../assets/images/instagram.png') no-repeat;
+	background-position: center center;
+	height: 19px;
+	display: block;
+	opacity: 1;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;	
+}
+
+header ul.home-social li a.instagram:hover {
+	opacity: .5;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+header ul.home-social li a.facebook {
+	width: 25px;
+	background: url('../assets/images/facebook.png') no-repeat;
+	background-position: center center;
+	height: 19px;
+	display: block;
+	opacity: 1;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+header ul.home-social li a.facebook:hover {
+	opacity: .5;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+header ul.home-social li a.twitter {
+	width: 25px;
+	background: url('../assets/images/twitter.png') no-repeat;
+	background-position: center center;
+	height: 19px;
+	display: block;
+	opacity: 1;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+header ul.home-social li a.twitter:hover {
+	opacity: .5;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+header ul.home-pref {
+	display: block;
+	float: right;
+	margin-bottom: 8px;
+}
+
+header ul.home-pref li {
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+header ul.home-pref li a.search {
+	width: 25px;
+	background: url('../assets/images/search.png') no-repeat;
+	background-position: center center;
+	height: 19px;
+	display: block;
+	opacity: 1;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;	
+}
+
+header ul.home-pref li a.search:hover {
+	opacity: .5;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+header ul.home-pref li a.cart {
+	width: 25px;
+	background: url('../assets/images/cart.png') no-repeat;
+	background-position: center center;
+	height: 19px;
+	display: block;
+	opacity: 1;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;	
+}
+
+header ul.home-pref li a.cart:hover {
+	opacity: .5;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+header ul.home-pref dl {font-size: 14px !important;}
+
+/*
 .icon-instagram {
 	background: url(../assets/images/instagram.png);
 }
@@ -29,9 +175,177 @@ div#social {
 .icon-twitter {
 	background: url(../assets/images/twitter.png);
 }
+*/
 
-.footer {
+footer .nav {
 	width: 100%;
-	height: 184px;
 	background-color: #aaaaaa;
+	line-height: 46px;
+}
+
+footer .home-social {line-height: 46px;	width: 100%; margin-top: 15px;}
+
+footer .home-social li{
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+footer ul.home-social li a.instagram {
+	width: 26px;
+	background: url('../assets/images/instagram-footer.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.instagram:hover {
+	width: 26px;
+	background: url('../assets/images/instagram-hover.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.facebook {
+	width: 26px;
+	background: url('../assets/images/facebook-footer.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.facebook:hover {
+	width: 26px;
+	background: url('../assets/images/facebook-hover.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.twitter {
+	width: 26px;
+	background: url('../assets/images/twitter-footer.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.twitter:hover {
+	width: 26px;
+	background: url('../assets/images/twitter-hover.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.tumblr {
+	width: 26px;
+	background: url('../assets/images/tumblr-footer.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.tumblr:hover {
+	width: 26px;
+	background: url('../assets/images/tumblr-hover.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.flickr {
+	width: 26px;
+	background: url('../assets/images/flickr-footer.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer ul.home-social li a.flickr:hover {
+	width: 26px;
+	background: url('../assets/images/flickr-hover.png') no-repeat;
+	background-position: center center;
+	height: 17px;
+	display: block;
+	transition: background .75s ease-in-out;
+	-moz-transition: background .75s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;	
+}
+
+footer .pats-corner {
+	background: url('../assets/images/pats-corner-footer.png') no-repeat;
+	height: 138px;
+	width: 100%;
+
+}
+
+footer .nav nav > a  {
+	font-family: 'Montserrat', Helvetica;	
+	text-transform: uppercase;
+	font-size: 10.42px;
+	color: #f0f0f0;
+	transition: color .75s ease-in-out;
+	-moz-transition: color .75s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;		
+	padding-right: 15px;
+}
+
+footer .nav nav > a:hover  {
+	text-decoration: underline;
+	color: #fff;
+	transition: color .75s ease-in-out;
+	-moz-transition: color .75s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;	
+}
+
+footer .available-icons {
+	line-height: 55px;
+	margin-top: 15px!important;
+	margin-bottom: 15px!important;	
+}
+
+footer .box-available {
+	font-family: 'Montserrat', Helvetica;	
+	border-right: 1px solid #e7e7e7;
+	text-transform: uppercase;
+	color: #aaa;
+	letter-spacing: 1.1px;
+	font-size: 12.5px;
+
+}
+
+footer .copyright { text-align: center; }
+footer .copyright p {
+	font-size: x-small;
+	line-height: 1;
+	margin-bottom: 0;
 }
