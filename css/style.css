@@ -345,6 +345,7 @@ footer .box-available {
 
 footer .copyright { text-align: center; }
 footer .copyright p {
+	font-family: helvetica, arial;
 	font-size: x-small;
 	line-height: 1;
 	margin-bottom: 0;
