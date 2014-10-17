@@ -308,6 +308,13 @@ footer .pats-corner {
 
 }
 
+footer .patscorner2 {
+	background: url('../assets/images/patscorner2.png') no-repeat;
+	height: 138px;
+	width: 100%;
+
+}
+
 footer .nav nav > a  {
 	font-family: 'Montserrat', Helvetica;	
 	text-transform: uppercase;
@@ -331,6 +338,13 @@ footer .available-icons {
 	line-height: 55px;
 	margin-top: 15px!important;
 	margin-bottom: 15px!important;	
+}
+
+footer .availableicons2 {
+	line-height: 100px;
+	margin-top: 15px!important;
+	margin-bottom: 15px!important;	
+	
 }
 
 footer .box-available {

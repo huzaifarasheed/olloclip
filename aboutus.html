@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/customSelectBox.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="css/example.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="row">
+        <div class="medium-4 columns">
+        <div class="logo"><img src="assets/images/logo.png"></div>
+        </div> 
+        
+        <div class="medium-4 columns push-down">
+          <div class="topMenu">
+            <ul class="medium-block-grid-3">
+              <li><a href="#">shop</a></li>
+              <li><a href="#">discover</a></li>
+              <li><a href="#">support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="medium-4 columns push-down">
+          <div class="row">
+          <ul class="home-social">
+          <li><a href="#" class="instagram"></a></li>
+          <li><a href="#" class="facebook"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul class="home-pref">
+            <li><a href="#" class="search"></a></li>
+            <li><a href="#" class="cart"></a></li>
+            <li>
+              <select class="custom" id="countriesFlag">
+                <option class="usa">$USD</option>
+                <option class="italy">Italy</option>
+                <option class="france">France</option>
+                <option class="germany">Germany</option>
+              </select>              
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+        <div class="row availableicons2">
+          <div class="large-3 medium-3 push-2 columns box-available">
+            <span>also available at</span>
+          </div>
+
+          <div class="large-7 medium-7 columns">
+            <img class="push-1" src="assets/images/apple-footer.png" alt="" />
+            <img class="push-2" src="assets/images/best-buy-footer.png" alt="" />
+            <img class="push-3" src="assets/images/target-footer.png" alt="" />         
+          </div>
+        </div>
+
+        <div class="row nav">
+        <div class="medium-2 columns">
+          <ul class="home-social">
+            <li><a href="#" class="instagram"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="tumblr"></a></li>
+            <li><a href="#" class="flickr"></a></li>            
+          </ul>
+        </div>
+        <div class="medium-9 columns">
+          <nav>
+            <a href="#">about</a>
+            <a href="#">contact us</a>
+            <a href="#">store locator</a>
+            <a href="#">media center</a>
+            <a href="#">careers</a>
+            <a href="#">terms &amp; conditions</a>
+            <a href="#">privacy policy</a>
+          </nav>
+        </div>
+      </div>
+      <div class="row patscorner2">
+          
+          
+          <div class="row copyright" style="display:block;text-align:bottom;margin-top:78px;">
+              <p>olloclip® is a registered trademark. © 2013 olloclip All rights reserved. U.S. Patent No. 8,279,544 and D678379. U.S. and Foreign Patents Pending.</p>
+              <p>Featured photography and the content within arethe property of respective owners. olloclip Registered Community Design Numbers</p>
+              <p>002199992-001, 002199992-0005, 001312359-0001, 001312359-0002, 001312359-0003, 001312359-0004</p>
+              <p>iPhone 5/4/4S and iPod are trademarks of Apple Inc. - See more at: http://ollo.lamp.r2integrated.com/#sthash.kHn32pu5.dpuf</p>
+          </div>
+      </div>
+    </footer>
+    
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/jScrollPane.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/SelectBox.js"></script>
+    <script>  
+      $(function() {
+        
+        $("select.custom").each(function() {          
+          var sb = new SelectBox({
+            selectbox: $(this),
+            height: 150,
+            width: 200
+          });
+        });
+
+        if($("div.selectList"))
+        {
+          var prevList = $('#countriesFlag');
+          prevList.css("display", "none");
+        }
+      });
+    </script>
+  </body>
+</html>
